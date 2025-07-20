@@ -1049,7 +1049,7 @@ async def back_to_settings_handler(update: Update, context: ContextTypes.DEFAULT
         return await start(update, context)
 
 if __name__ == "__main__":
-    TOKEN = "Your_Bot_Token"  
+    TOKEN = "7459204571:AAEo-CD_K9FjOPiKdg3gXSvAOat55h37Y0Q"  
     app = ApplicationBuilder().token(TOKEN).build()
     application.post_init = set_bot_commands
 
