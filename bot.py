@@ -194,7 +194,7 @@ async def set_bot_commands(application: Application):
         BotCommand("warn", "Warn a user"),
         BotCommand("settings", "Configure group filters"),
         BotCommand("mute", "shit mute"),
-        BotCommand("help", "Show Group Help")
+        BotCommand("help", "Show Group Help"),
         BotCommand("unmute", "unmute members"),
         BotCommand("unban", "Unban members")
     ]
