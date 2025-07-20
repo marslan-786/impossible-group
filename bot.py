@@ -1049,9 +1049,8 @@ async def back_to_settings_handler(update: Update, context: ContextTypes.DEFAULT
         return await start(update, context)
 
 if __name__ == "__main__":
-    TOKEN = "7459204571:AAEo-CD_K9FjOPiKdg3gXSvAOat55h37Y0Q"  
-    app = ApplicationBuilder().token(TOKEN).build()
-    Application.post_init = set_bot_commands
+    application = Application.builder().token("7459204571:AAEo-CD_K9FjOPiKdg3gXSvAOat55h37Y0Q").build()
+    application.post_init = set_bot_commands
 
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("help", show_help))
